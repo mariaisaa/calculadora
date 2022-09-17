@@ -26,7 +26,7 @@ function App() {
             alt='Logo flor' />
       </div>
       <div className= 'contenedor-calculadora'>
-        <Pantalla imput= {input}/>
+        <Pantalla input= {input}/>
       <div className= 'fila'> 
         <Boton manejarClic= {agregarInput}> 1 </Boton>
         <Boton manejarClic= {agregarInput}> 2 </Boton>
@@ -52,7 +52,9 @@ function App() {
         <Boton manejarClic= {agregarInput}> / </Boton>
       </div>
       <div className= 'fila'>
-        <BotonClear>Clear</BotonClear>
+        <BotonClear manejarClear = {() => setInput('')}>
+        Clear
+        </BotonClear>
       </div>
     </div>
    </div>
